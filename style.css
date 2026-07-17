@@ -463,9 +463,6 @@ button { font-family: inherit; cursor: pointer; }
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image:
-    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
   background-size: 64px 64px;
   -webkit-mask-image: radial-gradient(70% 70% at 50% 30%, #000 30%, transparent 85%);
   mask-image: radial-gradient(70% 70% at 50% 30%, #000 30%, transparent 85%);
@@ -1189,9 +1186,6 @@ button { font-family: inherit; cursor: pointer; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
   background-size: 64px 64px;
   -webkit-mask-image: radial-gradient(85% 80% at 50% 40%, #000 30%, transparent 85%);
   mask-image: radial-gradient(85% 80% at 50% 40%, #000 30%, transparent 85%);
@@ -1288,11 +1282,51 @@ button { font-family: inherit; cursor: pointer; }
 .cat-eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); }
 .cat-heading h2 { font-size: 1.9rem; }
 .cat-heading p { color: var(--gray-text); font-size: 0.98rem; margin: 0; }
+.cat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.4rem;
+}
+.cat-contact-btn,
+.cat-readmore-btn {
+  padding: 0.75rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+}
 .cat-contact-btn {
-  align-self: flex-start;
-  padding: 0.7rem 1.5rem;
-  font-size: 0.92rem;
-  margin-top: 0.25rem;
+  background: var(--ink);
+  color: var(--white);
+}
+.cat-contact-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.18);
+}
+.cat-readmore-btn {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--border-gray);
+}
+.cat-readmore-btn:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+.cat-contact-btn::after,
+.cat-readmore-btn::after {
+  content: "→";
+  transition: transform .2s ease;
+}
+.cat-contact-btn:hover::after,
+.cat-readmore-btn:hover::after {
+  transform: translateX(3px);
 }
 
 /* brief highlight on the case-type field when arriving via a "Contact Now" link */
@@ -1312,7 +1346,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .cat-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.7rem;
   font-size: 0.98rem;
   padding: 0.85rem 1rem;
@@ -1329,7 +1363,6 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--white);
   font-size: 0.72rem;
   display: flex; align-items: center; justify-content: center;
-  margin-top: 0.1rem;
 }
 
 .icon-brick { background: #f3ddd9; }
