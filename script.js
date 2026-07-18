@@ -339,6 +339,42 @@ if (prevBtn) {
 })();
 
 /* ===========================
+   CAT-LIST STAGGER REVEAL (left -> right as you scroll)
+=========================== */
+(function () {
+
+    const lists = document.querySelectorAll(".cat-list");
+    if (!lists.length) return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+        lists.forEach(list => list.classList.add("is-visible"));
+        return;
+    }
+
+    // Stagger delay per item, left-to-right / row-by-row
+    lists.forEach(list => {
+        const items = Array.from(list.children);
+        items.forEach((item, i) => {
+            item.style.setProperty("--reveal-delay", `${i * 90}ms`);
+        });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2, rootMargin: "0px 0px -80px 0px" });
+
+    lists.forEach(list => observer.observe(list));
+
+})();
+
+/* ===========================
    SCROLL REVEAL
 =========================== */
 (function () {

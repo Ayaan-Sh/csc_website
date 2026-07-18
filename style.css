@@ -1354,6 +1354,23 @@ button { font-family: inherit; cursor: pointer; }
   background: var(--white);
   border: 1px solid var(--border-gray);
   border-radius: 6px;
+
+  /* scroll-reveal: start hidden, offset to the left */
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition-delay: var(--reveal-delay, 0s);
+}
+.cat-list.is-visible li {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .cat-list li {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 .bg-cream .cat-list li { background: var(--cream); }
 .cat-list li .tick {
