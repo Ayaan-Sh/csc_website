@@ -339,6 +339,39 @@ if (prevBtn) {
 })();
 
 /* ===========================
+   TRACK EXPLORER (training page program tabs)
+=========================== */
+(function () {
+
+    const tabs = document.querySelectorAll(".track-tab");
+    const panels = document.querySelectorAll(".track-panel");
+
+    if (!tabs.length || !panels.length) return;
+
+    tabs.forEach(tab => {
+
+        tab.addEventListener("click", () => {
+
+            tabs.forEach(t => {
+                t.classList.remove("active");
+                t.setAttribute("aria-selected", "false");
+            });
+            panels.forEach(p => p.classList.remove("active"));
+
+            tab.classList.add("active");
+            tab.setAttribute("aria-selected", "true");
+
+            const target = tab.dataset.track;
+            const panel = document.querySelector(`.track-panel[data-panel="${target}"]`);
+            if (panel) panel.classList.add("active");
+
+        });
+
+    });
+
+})();
+
+/* ===========================
    CAT-LIST STAGGER REVEAL (left -> right as you scroll)
 =========================== */
 (function () {

@@ -41,34 +41,616 @@
   </div>
 </header>
 
-<!-- ============ SERVICE DETAIL ============ -->
-<section class="cat-section bg-white">
-  <div class="cat-inner">
-    <div class="cat-heading">
-      <div class="cat-icon icon-gold">
-        <svg viewBox="0 0 64 64" width="32" height="32">
-          <path fill="#24413a" d="M32 10 4 22l28 12 28-12z"/>
-          <path fill="#24413a" d="M16 28v10c0 6 7 11 16 11s16-5 16-11V28l-16 7-16-7z"/>
-          <rect x="50" y="24" width="3" height="16" fill="#d9a441"/>
-          <circle cx="51.5" cy="42" r="3" fill="#d9a441"/>
-        </svg>
+<!-- ============ TRACK EXPLORER ============ -->
+<section class="track-explorer" id="tracks">
+  <div class="track-explorer-inner">
+
+    <div class="track-header">
+      <span class="cat-eyebrow">Program</span>
+      <h2>Find Your Cyber Career Path</h2>
+      <p>Every track is instructor-led and hands-on, shaped by 20+ years of real investigative and defensive work — not slides. Pick a track to see every topic covered and the roles it leads to.</p>
+    </div>
+
+    <div class="track-wrapper">
+
+      <!-- SIDEBAR -->
+      <div class="track-sidebar" id="trackSidebar" role="tablist">
+        <button class="track-tab active" data-track="security" role="tab" aria-selected="true">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Cyber Security</span>
+            <span class="track-tab-sub">Defend networks &amp; systems</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="forensics" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Cyber Forensics</span>
+            <span class="track-tab-sub">Investigate &amp; build evidence</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="law" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Cyber Law</span>
+            <span class="track-tab-sub">Legal &amp; compliance track</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="audit" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Cyber Audit</span>
+            <span class="track-tab-sub">Assess risk &amp; compliance</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="intel" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Threat Intelligence</span>
+            <span class="track-tab-sub">Track fraud &amp; threat actors</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="ai" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">AI &amp; Emerging Tech</span>
+            <span class="track-tab-sub">Secure the newest attack surface</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="industry" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Industry Programs</span>
+            <span class="track-tab-sub">BFSI, Govt, Healthcare &amp; more</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="leadership" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Executive &amp; Leadership</span>
+            <span class="track-tab-sub">Govern cyber risk at the top</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
+        <button class="track-tab" data-track="awareness" role="tab" aria-selected="false">
+          <span class="track-tab-text">
+            <span class="track-tab-title">Awareness &amp; Training</span>
+            <span class="track-tab-sub">Build cyber-safe organizations</span>
+          </span>
+          <span class="track-tab-arrow">→</span>
+        </button>
       </div>
-      <span class="cat-eyebrow">Workshops &amp; Certification</span>
-      <h2>Cyber Training</h2>
-      <p>Practical, hands-on workshops that build cyber hygiene and threat-response skills across law enforcement, institutions and corporates.</p>
-      <div class="cat-actions">
-        <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn btn-dark cat-contact-btn" data-service="Cyber Training">Contact Us Now</a>
-        <a href="services.html#training" class="btn cat-readmore-btn">Back to All Services</a>
+
+      <!-- CONTENT PANELS -->
+      <div class="track-content">
+        <div class="track-panel active" data-panel="security">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For teams defending networks &amp; systems</span>
+              <h3>Cyber Security &amp; Defence</h3>
+              <span class="tp-badge">Hands-on labs · Real attack simulations</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">21 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Enterprise Cyber Security</li>
+                <li>Cyber Defence Strategies</li>
+                <li>Security Operations Centre (SOC)</li>
+                <li>Security Operations &amp; Threat Monitoring</li>
+                <li>Threat Hunting &amp; Detection</li>
+                <li>Cyber Threat Intelligence</li>
+                <li>Cyber Incident Response</li>
+                <li>Cyber Crisis Management</li>
+                <li>Digital Risk Management</li>
+                <li>Security Architecture &amp; Design</li>
+                <li>Identity &amp; Access Management (IAM)</li>
+                <li>Network Security</li>
+                <li>Endpoint Security</li>
+                <li>Cloud Security</li>
+                <li>Email Security</li>
+                <li>Web Application Security</li>
+                <li>API Security</li>
+                <li>Secure Configuration &amp; Hardening</li>
+                <li>Security Monitoring &amp; SIEM</li>
+                <li>Malware Analysis Fundamentals</li>
+                <li>Ransomware Defence &amp; Recovery</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>SOC Analyst</span>
+                <span>Cyber Security Engineer</span>
+                <span>Incident Response Analyst</span>
+                <span>Security Architect</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="forensics">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For investigators building court-ready evidence</span>
+              <h3>Cyber Forensics &amp; Investigation</h3>
+              <span class="tp-badge">Chain-of-custody trained</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">33 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Computer Forensics</li>
+                <li>Mobile Device Forensics</li>
+                <li>Hard Disk Forensics</li>
+                <li>Memory (RAM) Forensics</li>
+                <li>Live System Forensics</li>
+                <li>Email Forensics</li>
+                <li>Cloud Forensics</li>
+                <li>Network Forensics</li>
+                <li>Database Forensics</li>
+                <li>Browser &amp; Internet Artefact Analysis</li>
+                <li>Log Analysis &amp; Forensic Investigation</li>
+                <li>Malware Forensics</li>
+                <li>Incident Response &amp; Digital Evidence Collection</li>
+                <li>Digital Evidence Handling &amp; Chain of Custody</li>
+                <li>Forensic Imaging &amp; Acquisition</li>
+                <li>File System Forensics</li>
+                <li>Windows Forensics</li>
+                <li>Linux Forensics</li>
+                <li>macOS Forensics</li>
+                <li>Social Media Investigations</li>
+                <li>Open Source Intelligence (OSINT)</li>
+                <li>Cryptocurrency &amp; Blockchain Forensics</li>
+                <li>Dark Web Investigations</li>
+                <li>Audio &amp; Video Forensics</li>
+                <li>Image Authentication &amp; Metadata Analysis</li>
+                <li>CCTV &amp; DVR Forensics</li>
+                <li>Email Header Analysis</li>
+                <li>Financial Cyber Fraud Investigation</li>
+                <li>Online Scam Investigation</li>
+                <li>Child Online Safety &amp; Investigation</li>
+                <li>E-Discovery &amp; Electronic Evidence</li>
+                <li>Courtroom Presentation of Digital Evidence</li>
+                <li>Expert Witness Training in Digital Forensics</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>Digital Forensic Investigator</span>
+                <span>OSINT Analyst</span>
+                <span>Evidence &amp; Chain-of-Custody Officer</span>
+                <span>Cybercrime Investigator</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="law">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For legal &amp; compliance professionals</span>
+              <h3>Cyber Law &amp; Legal Compliance</h3>
+              <span class="tp-badge">Built around Indian cyber law</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">18 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Indian Cyber Law &amp; Digital Regulations</li>
+                <li>Bharatiya Sakshya Adhiniyam (BSA) &amp; Electronic Evidence</li>
+                <li>Information Technology Act &amp; Rules</li>
+                <li>Data Protection &amp; Privacy Laws</li>
+                <li>Digital Personal Data Protection (DPDP) Act</li>
+                <li>Electronic Evidence Collection &amp; Admissibility</li>
+                <li>Cyber Contracts &amp; E-Commerce Law</li>
+                <li>Intellectual Property in Cyberspace</li>
+                <li>Digital Signature &amp; Electronic Records</li>
+                <li>Cyber Compliance Framework</li>
+                <li>Cyber Litigation Support</li>
+                <li>Legal Aspects of Artificial Intelligence</li>
+                <li>Cross-Border Cyber Crime Investigation</li>
+                <li>International Cyber Law</li>
+                <li>Drafting Cyber Legal Documents</li>
+                <li>Cyber Crime Complaint Handling</li>
+                <li>Law Enforcement Cyber Investigation</li>
+                <li>Privacy &amp; Data Governance</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>Cyber Law Consultant</span>
+                <span>Compliance Officer</span>
+                <span>Litigation Support Specialist</span>
+                <span>Legal Advisor – Cyber</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="audit">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For auditors, GRC &amp; risk teams</span>
+              <h3>Cyber Audit &amp; Risk Assessment</h3>
+              <span class="tp-badge">Framework-aligned training</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">20 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Cyber Security Audit</li>
+                <li>CIS Benchmark Audit</li>
+                <li>Information Systems Audit</li>
+                <li>Vulnerability Assessment</li>
+                <li>Penetration Testing</li>
+                <li>Email Security Assessment</li>
+                <li>Risk Assessment &amp; Gap Analysis</li>
+                <li>Third-Party Vendor Security Assessment</li>
+                <li>Cyber Maturity Assessment</li>
+                <li>Compliance Readiness Assessment</li>
+                <li>Cyber Resilience Assessment</li>
+                <li>Security Policy Development</li>
+                <li>Business Continuity &amp; Disaster Recovery Audit</li>
+                <li>ISO/IEC 27001 Awareness &amp; Implementation</li>
+                <li>NIST Cyber Security Framework</li>
+                <li>CIS Controls Implementation</li>
+                <li>CERT-In Compliance</li>
+                <li>RBI Cyber Security Framework</li>
+                <li>PCI DSS Compliance</li>
+                <li>DPDP Compliance Program</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>Cyber Security Auditor</span>
+                <span>GRC Analyst</span>
+                <span>Risk &amp; Compliance Consultant</span>
+                <span>VAPT Specialist</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="intel">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For analysts tracking fraud &amp; threat actors</span>
+              <h3>Cyber Threat Intelligence</h3>
+              <span class="tp-badge">Financial fraud &amp; OSINT focus</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">12 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Financial Fraud Investigation</li>
+                <li>Banking Fraud Investigation</li>
+                <li>Business Email Compromise Investigation</li>
+                <li>Social Media Intelligence</li>
+                <li>Open Source Intelligence (OSINT)</li>
+                <li>Dark Web Intelligence</li>
+                <li>Cryptocurrency Investigation</li>
+                <li>Digital Evidence Collection</li>
+                <li>Intelligence Analysis Techniques</li>
+                <li>Threat Actor Profiling</li>
+                <li>Attribution &amp; Investigation Methodologies</li>
+                <li>Cyber Crime Case Management</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>Threat Intelligence Analyst</span>
+                <span>Financial Fraud Investigator</span>
+                <span>OSINT Analyst</span>
+                <span>Cybercrime Case Manager</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="ai">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For teams securing the newest attack surface</span>
+              <h3>AI &amp; Emerging Technologies</h3>
+              <span class="tp-badge">Deepfake &amp; AI fraud focus</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">10 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Artificial Intelligence in Cyber Security</li>
+                <li>Generative AI Security</li>
+                <li>AI Risk Management</li>
+                <li>AI Governance &amp; Compliance</li>
+                <li>AI for Threat Detection</li>
+                <li>Machine Learning for Cyber Defence</li>
+                <li>Prompt Security &amp; AI Abuse Prevention</li>
+                <li>Deepfake Detection &amp; Investigation</li>
+                <li>Digital Identity Protection</li>
+                <li>Future of Cyber Warfare</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>AI Security Analyst</span>
+                <span>Deepfake &amp; Fraud Investigator</span>
+                <span>AI Governance Specialist</span>
+                <span>Threat Detection Engineer</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="industry">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For sector-specific security teams</span>
+              <h3>Specialized Industry Programs</h3>
+              <span class="tp-badge">Tailored to BFSI, Govt, Healthcare &amp; more</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">12 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Cyber Security for Banks &amp; NBFCs</li>
+                <li>Cyber Security for Cooperative Banks</li>
+                <li>Cyber Security for Government Departments</li>
+                <li>Cyber Security for Police &amp; Law Enforcement</li>
+                <li>Cyber Security for Judiciary</li>
+                <li>Cyber Security for Educational Institutions</li>
+                <li>Cyber Security for Healthcare</li>
+                <li>Cyber Security for Manufacturing</li>
+                <li>Cyber Security for Pharma Companies</li>
+                <li>Cyber Security for SMEs</li>
+                <li>Cyber Security for Startups</li>
+                <li>Cyber Security for NGOs</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>Sector Cyber Security Lead</span>
+                <span>Industry Compliance Officer</span>
+                <span>Vertical Security Consultant</span>
+                <span>Sector Risk &amp; Governance Specialist</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="leadership">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For CXOs, boards &amp; senior leaders</span>
+              <h3>Executive &amp; Leadership</h3>
+              <span class="tp-badge">Boardroom-ready briefings</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">9 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Cyber Security for CXOs</li>
+                <li>Boardroom Cyber Governance</li>
+                <li>Cyber Risk Management for Executives</li>
+                <li>Digital Transformation &amp; Cyber Risk</li>
+                <li>Cyber Resilience for Business Leaders</li>
+                <li>Crisis Communication During Cyber Incidents</li>
+                <li>Executive Cyber Decision Making</li>
+                <li>Building a Cyber Resilient Organization</li>
+                <li>Strategic Cyber Security Leadership</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>CISO</span>
+                <span>Cyber Risk Advisor</span>
+                <span>Crisis Response Lead</span>
+                <span>Strategic Security Leader</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-panel" data-panel="awareness">
+          <div class="tp-top">
+            <div>
+              <span class="tp-eyebrow">For institutions building a cyber-safe culture</span>
+              <h3>Awareness &amp; Capacity Building</h3>
+              <span class="tp-badge">For schools, corporates &amp;amp; families</span>
+            </div>
+            <div class="tp-stats">
+              <div class="tp-stat"><strong>20+ Yrs</strong><span>Team Experience</span></div>
+              <div class="tp-stat"><strong>Custom</strong><span>Duration &amp; Format</span></div>
+            </div>
+          </div>
+
+          <hr class="tp-divider">
+
+          <div class="tp-body">
+            <div class="tp-topics-box">
+              <div class="tp-topics-header">
+                <span class="tp-section-label">Full Topic List</span>
+                <span class="tp-topics-count">15 topics</span>
+              </div>
+              <ul class="tp-topics-list">
+                <li>Cyber Safety &amp; Digital Wellbeing</li>
+                <li>Cyber Hygiene Program</li>
+                <li>Safe Internet Practices</li>
+                <li>Social Media Safety</li>
+                <li>Password Security &amp; MFA</li>
+                <li>Phishing &amp; Scam Awareness</li>
+                <li>Ransomware Awareness</li>
+                <li>Safe Digital Payments</li>
+                <li>Digital Privacy Awareness</li>
+                <li>Child Online Safety</li>
+                <li>Women Cyber Safety</li>
+                <li>Senior Citizen Cyber Safety</li>
+                <li>Employee Cyber Awareness Program</li>
+                <li>Faculty Development Program in Cyber Security</li>
+                <li>Train-the-Trainer Program in Cyber Security</li>
+              </ul>
+            </div>
+
+            <div class="tp-side">
+              <div class="tp-section-label">Where This Can Take You</div>
+              <div class="tp-role-tags">
+                <span>Cyber Awareness Trainer</span>
+                <span>Employee Safety Program Coordinator</span>
+                <span>Faculty Development Trainer</span>
+                <span>Institutional Safety Lead</span>
+              </div>
+
+              <div class="tp-actions">
+                <a href="services.html?service=Cyber%20Training#case-inquiry" class="btn tp-btn-solid cat-contact-btn" data-service="Cyber Training">Enquire Now</a>
+                <a href="tel:+917709619249" class="btn tp-btn-ghost">Call +91 7709619249</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <ul class="cat-list">
-      <li><span class="tick">✓</span>Corporate &amp; judiciary training programs</li>
-      <li><span class="tick">✓</span>Corporate cyber hygiene &amp; Curated workshops</li>
-      <li><span class="tick">✓</span>Student &amp; institutional awareness sessions</li>
-      <li><span class="tick">✓</span>Preparation for Global Certifications</li>
-      <li><span class="tick">✓</span>Incident response &amp; tabletop drills</li>
-      <li><span class="tick">✓</span>Train-the-trainer</li>
-    </ul>
   </div>
 </section>
 
